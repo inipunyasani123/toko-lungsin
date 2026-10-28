@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { useEffect, useRef, useState } from 'react';
 import Busana, { GambarProduk, GambarDetail, KainDekat, KainLipat, ContohKain } from './Busana';
 import PitaUkur from './PitaUkur';
@@ -11,6 +12,7 @@ import { cariProduk, cariKain, potongan, labelUkur, site } from '@/lib/data';
 import { hargaVarian, stokVarian, varianAwal, stokKain, produkAktif, satuUkuran, cariUkuran } from '@/lib/katalog';
 import { rekomendasi, jatuhUjung } from '@/lib/ukuran';
 import { rupiah, gram } from '@/lib/format';
+import { cariFoto } from '@/lib/foto';
 import { useInventaris, useKeranjang, useTerpasang, useProfil, tambahKeKeranjang } from '@/lib/store';
 
 const KOLOM_UKUR = ['dada', 'pinggang', 'pinggul', 'paha', 'bahu', 'panjang', 'lengan'];
@@ -130,13 +132,16 @@ export default function DetailProduk({ slug }) {
     } else setPesan({ ok: false, teks: 'Stok pilihan ini sudah habis atau semuanya sudah ada di keranjangmu.' });
   };
 
+  const foto = cariFoto(p.slug);
   const galeri =
     p.jenis === 'kain'
       ? [
+          ...(foto ? [{ jenis: 'foto', label: 'Foto contoh tenunan bergaris' }] : []),
           { jenis: 'lipat', label: `${kn.nama}, terlipat` },
           { jenis: 'dekat', label: `Tenunan ${kn.nama} dari dekat` },
         ]
       : [
+          ...(foto ? [{ jenis: 'foto', label: 'Foto contoh (warna kain bisa berbeda)' }] : []),
           { jenis: 'utama', label: `Di manekin, kain ${kn.nama}` },
           { jenis: 'gantung', label: 'Tergantung' },
           { jenis: 'detail', label: 'Detail jahitan' },
@@ -147,6 +152,7 @@ export default function DetailProduk({ slug }) {
 
   const gambarBesar = (it, kecil = false) => {
     const kelas = 'absolute inset-0 h-full w-full';
+    if (it.jenis === 'foto') return <Image src={foto.src} alt={kecil ? '' : foto.alt} fill priority={!kecil} sizes={kecil ? '96px' : '(min-width: 1024px) 56vw, 100vw'} className="object-cover" />;
     if (it.jenis === 'lipat') return <KainLipat kain={k} judul={kecil ? '' : `${p.nama} ${kn.nama}, terlipat dengan gulungan kain`} className={kelas} />;
     if (it.jenis === 'dekat') return <KainDekat kain={k} judul={kecil ? '' : `Tenunan kain ${kn.nama} dari dekat`} className={kelas} />;
     if (it.jenis === 'gantung') return <GambarProduk p={p} kain={k} jenis="kartu" judul={kecil ? '' : undefined} className={kelas} />;
