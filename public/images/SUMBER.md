@@ -1,9 +1,7 @@
 # Sumber foto
-
 Semua foto di folder ini berlisensi CC0 1.0 (Creative Commons Zero, domain publik), diambil dari Wikimedia Commons,
 lalu dipotong, saturasinya diturunkan sedikit, dan dikonversi ke WebP. Bagian yang memuat label atau merek yang
 terbaca dipotong. Ilustrasi manekin, sosok, dan contoh warna kain di situs ini digambar sendiri dengan SVG (lib/busana). Foto katalog di bawah (awalan `katalog-`) menggambarkan jenis dan gaya, bukan stok persis tiap kain: semuanya "pendekatan" (kemeja atau kain bergaris/kotak yang mirip lurik). Bagian yang memuat label atau merek dipotong. Semua 14 produk kini berfoto; yang bukan lurik persis ditandai "pendekatan".
-
 | Berkas | Judul asli | Pembuat | Sumber | Lisensi |
 | --- | --- | --- | --- | --- |
 | `proses-benang.webp` | Colorful thread spools (Unsplash) | Annie Spratt | https://commons.wikimedia.org/wiki/File:Colorful_thread_spools_(Unsplash).jpg | CC0 1.0 |
@@ -14,12 +12,13 @@ terbaca dipotong. Ilustrasi manekin, sosok, dan contoh warna kain di situs ini d
 | `katalog-kemeja-lajur-panjang.webp` | 02123jfClothes shirts pants in Philippinesfvf 03 (kemeja bergaris, kiri) | Judgefloro | https://commons.wikimedia.org/wiki/File:02123jfClothes_shirts_pants_in_Philippinesfvf_03.jpg | CC0 1.0, pendekatan |
 | `katalog-blus-shanghai.webp` | 02123jfClothes shirts pants in Philippinesfvf 07 (bergaris tipis, kiri) | Judgefloro | https://commons.wikimedia.org/wiki/File:02123jfClothes_shirts_pants_in_Philippinesfvf_07.jpg | CC0 1.0, pendekatan |
 | `katalog-tunik-kebun.webp` | 02123jfClothes shirts pants in Philippinesfvf 07 (kotak hijau, kanan) | Judgefloro | https://commons.wikimedia.org/wiki/File:02123jfClothes_shirts_pants_in_Philippinesfvf_07.jpg | CC0 1.0, pendekatan |
-| `katalog-outer-sore.webp`, `katalog-jaket-kerja.webp` | Hanging shirts and jackets (Unsplash) | Crew (Unsplash), via Wikimedia Commons | https://commons.wikimedia.org/wiki/File:Hanging_shirts_and_jackets_(Unsplash).jpg | CC0 1.0, pendekatan (dua potongan berbeda) |
 | `katalog-syal-lurik.webp` | Marinière sweater close-up | DimiTalen | https://commons.wikimedia.org/wiki/File:Mariniere_sweater_close-up.jpg | CC0 1.0, pendekatan |
 | `katalog-kain-lurik-meteran.webp` | Sarape (Mexico), ca. 1870 (CH 18562201) | Pembuat tidak diketahui; koleksi Cooper Hewitt | https://commons.wikimedia.org/wiki/File:Sarape_(Mexico),_ca._1870_(CH_18562201).jpg | Domain publik, pendekatan |
 | `katalog-celana-tali.webp` | Black Trousers with White Pinstripes Worn by Bonnie Blake - DPLA (page 1) | Perceptions, Inc (via DPLA), Wikimedia Commons | https://commons.wikimedia.org/wiki/File:Black_Trousers_with_White_Pinstripes_Worn_by_Bonnie_Blake_-_DPLA_-_675b0eed59debfcf8f5722347bfbbe8d_(page_1).jpg | Domain publik, pendekatan (celana bergaris sebagai wakil celana lurik) |
 | `katalog-kulot-lebar.webp` | Trousers MET 1974.194.8 | Metropolitan Museum of Art (via Wikimedia Commons) | https://commons.wikimedia.org/wiki/File:Trousers_MET_1974.194.8.jpg | CC0 1.0, pendekatan (celana kotak longgar sebagai wakil kulot) |
 | `katalog-terusan-pasar.webp` | Japon van blauw en wit gestreepte katoen (BK-15444-5) | Rijksmuseum | https://commons.wikimedia.org/wiki/File:Japon_van_blauw_en_wit_gestreepte_katoen,_BK-15444-5.jpg | CC0 1.0, pendekatan (terusan katun bergaris sebagai wakil terusan lurik) |
 | `katalog-rok-lilit.webp` | Brown striped print dress - DPLA (page 1) (potongan bagian rok) | tidak tercatat (via DPLA), Wikimedia Commons | https://commons.wikimedia.org/wiki/File:Brown_striped_print_dress_-_DPLA_-_0c4e582bdede1a35a66f70c43aff214e_(page_1).jpg | Domain publik, pendekatan |
-| `katalog-kerudung-segi-empat.webp` | Red and blue bandannas (potongan bandana merah) | User:Felixed (en.wikipedia) | https://commons.wikimedia.org/wiki/File:Red_and_blue_bandannas.jpg | Domain publik, pendekatan (kain segi empat sebagai wakil kerudung) |
-| `katalog-tas-jinjing.webp` | Carpet Bag (USA), 1860–69 (CH 18408269) | Pembuat tidak diketahui; koleksi Cooper Hewitt | https://commons.wikimedia.org/wiki/File:Carpet_Bag_(USA),_1860%E2%80%9369_(CH_18408269).jpg | Domain publik, pendekatan (tas kain tenun) |
+| `katalog-outer-sore.webp` | Coat MET 1981.313.1 F | Metropolitan Museum of Art (via Wikimedia Commons) | https://commons.wikimedia.org/wiki/File:Coat_MET_1981.313.1_F.jpg | CC0 1.0, pendekatan (mantel bergaris sebagai wakil outer) |
+| `katalog-jaket-kerja.webp` | Sakiori (rag woven) work jacket from Japan, Honolulu Museum of Art, 9074.1 | Hiart (Honolulu Museum of Art, via Wikimedia Commons) | https://commons.wikimedia.org/wiki/File:Sakiori_(rag_woven)_work_jacket_from_Japan,_Honolulu_Museum_of_Art,_9074.1.JPG | CC0 1.0, pendekatan (jaket kerja tenun nila) |
+| `katalog-kerudung-segi-empat.webp` | Scarf MET CP217 CP4 | Metropolitan Museum of Art (via Wikimedia Commons) | https://commons.wikimedia.org/wiki/File:Scarf_MET_CP217_CP4.jpg | CC0 1.0, pendekatan (kain segi empat biru sebagai wakil kerudung) |
+| `katalog-tas-jinjing.webp` | Bag (Bolivia), 19th century (CH 18404035) | Pembuat tidak diketahui; koleksi Cooper Hewitt | https://commons.wikimedia.org/wiki/File:Bag_(Bolivia),_19th_century_(CH_18404035).jpg | Domain publik, pendekatan (tas tenun bergaris) |
