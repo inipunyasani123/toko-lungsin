@@ -2,6 +2,8 @@
 
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
+import Image from 'next/image';
+import { cariFoto } from '@/lib/foto';
 import { GambarProduk } from './Busana';
 import { cariProduk, cariKain, site } from '@/lib/data';
 import { hargaVarian, beratVarian, labelVarian, stokVarian, produkAktif, satuUkuran } from '@/lib/katalog';
@@ -156,7 +158,13 @@ export default function Keranjang() {
             return (
               <li key={it.kunci} className="grid grid-cols-[5.5rem_1fr] gap-4 border-b border-garis py-5 sm:grid-cols-[7rem_1fr_auto]">
                 <div className="aspect-[4/5] overflow-hidden rounded-[6px]" style={{ background: cariKain(it.kain)?.muda }}>
-                  <GambarProduk p={it.p} kain={it.kain} jenis="kartu" judul="" className="h-full w-full" />
+                  {cariFoto(it.p.slug) ? (
+                    <div className="relative h-full w-full">
+                      <Image src={cariFoto(it.p.slug).src} alt="" fill sizes="112px" className="object-cover" />
+                    </div>
+                  ) : (
+                    <GambarProduk p={it.p} kain={it.kain} jenis="kartu" judul="" className="h-full w-full" />
+                  )}
                 </div>
                 <div className="min-w-0">
                   <h3 className="text-[1.05rem]">

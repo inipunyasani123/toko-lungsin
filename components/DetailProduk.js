@@ -143,7 +143,7 @@ export default function DetailProduk({ slug }) {
       : [
           ...(foto ? [{ jenis: 'foto', label: 'Foto contoh (warna kain bisa berbeda)' }] : []),
           { jenis: 'utama', label: `Di manekin, kain ${kn.nama}` },
-          { jenis: 'gantung', label: 'Tergantung' },
+          ...(foto ? [] : [{ jenis: 'gantung', label: 'Tergantung' }]),
           { jenis: 'detail', label: 'Detail jahitan' },
           { jenis: 'dekat', label: `Tenunan ${kn.nama} dari dekat` },
           ...(padan ? [{ jenis: 'padu', label: `Dipadukan dengan ${padan.nama}` }] : []),
