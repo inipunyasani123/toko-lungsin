@@ -87,7 +87,7 @@ export default function Footer() {
         </div>
         <div className="wadah flex flex-wrap items-center justify-between gap-3 border-t border-white/15 py-5 text-[0.84rem] text-[#c3c8d3]">
           <p>Produk, harga, stok, alamat, dan pesanan di situs ini contoh.</p>
-          <p className="label text-[0.7rem] text-[#c3c8d3]">Dijahit di {site.kota} · lebar kain {site.lebarKain} cm</p>
+          <p className="label text-[0.75rem] text-[#c3c8d3]">Dijahit di {site.kota} · lebar kain {site.lebarKain} cm</p>
         </div>
       </div>
     </footer>

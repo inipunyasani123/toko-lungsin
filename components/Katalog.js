@@ -107,7 +107,7 @@ function KatalogIsi({ kunciSp }) {
       <div className="flex flex-wrap items-center gap-3 lg:hidden">
         <button type="button" className="tombol tombol-garis min-h-11 py-2" aria-expanded={panel} aria-controls={idPanel} onClick={() => setPanel((v) => !v)}>
           {panel ? 'Tutup saringan' : 'Saring'}
-          {jumlahFilter > 0 && <span className="label rounded-full bg-nila px-2 py-0.5 text-[0.68rem] text-white">{jumlahFilter}</span>}
+          {jumlahFilter > 0 && <span className="label rounded-full bg-nila px-2 py-0.5 text-[0.75rem] text-white">{jumlahFilter}</span>}
         </button>
         <div className="ms-auto">{pilihUrut}</div>
       </div>
@@ -151,7 +151,7 @@ function KatalogIsi({ kunciSp }) {
               <li key={k.id}>
                 <Pilihan checked={filter.kategori.includes(k.id)} onChange={() => balik('kategori', k.id)}>
                   <span>{k.nama}</span>
-                  <span className="label ms-auto text-[0.7rem] text-tinta-3">{aktifSemua.filter((p) => p.kategori === k.id).length}</span>
+                  <span className="label ms-auto text-[0.75rem] text-tinta-3">{aktifSemua.filter((p) => p.kategori === k.id).length}</span>
                 </Pilihan>
               </li>
             ))}

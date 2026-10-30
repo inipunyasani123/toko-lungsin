@@ -32,7 +32,7 @@ export default function Linimasa({ tahap, kini, waktu, ringkas = false, tambahan
                 {s.label}
                 <span className="sr-only">{sekarang ? ' (status sekarang)' : selesai ? ' (selesai)' : ' (belum)'}</span>
               </p>
-              <p className="label mt-1 text-[0.68rem] text-tinta-2">{w ? waktuWIB(w) : 'Belum'}</p>
+              <p className="label mt-1 text-[0.75rem] text-tinta-2">{w ? waktuWIB(w) : 'Belum'}</p>
               {!ringkas && selesai && <p className="mt-1 text-[0.9rem] text-tinta-2">{s.ket}</p>}
               {!ringkas && tambahan[s.id]}
             </div>

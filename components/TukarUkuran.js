@@ -135,7 +135,7 @@ export default function TukarUkuran({ o, sekarang }) {
                       >
                         <input id={`${id}-ke-${i}`} type="radio" name={`${id}-ke`} className="sr-only" value={u.id} checked={ke === u.id} disabled={s <= 0} onChange={() => setKe(u.id)} />
                         <span className="font-semibold">{u.id}</span>
-                        <span className={`label text-[0.58rem] ${ke === u.id ? 'text-[#dfe4ee]' : s <= 0 ? 'text-secang' : 'text-tinta-3'}`}>{s <= 0 ? 'Habis' : `Stok ${s}`}</span>
+                        <span className={`label text-[0.75rem] ${ke === u.id ? 'text-[#dfe4ee]' : s <= 0 ? 'text-secang' : 'text-tinta-3'}`}>{s <= 0 ? 'Habis' : `Stok ${s}`}</span>
                       </label>
                     );
                   })}

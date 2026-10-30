@@ -36,7 +36,7 @@ function GrafikTujuhHari({ hari }) {
       <div className="relative mt-5 grid grid-cols-[3.4rem_1fr] gap-2">
         <div className="relative h-[180px]" aria-hidden="true">
           {[atas, atas / 2, 0].map((v, i) => (
-            <span key={v} className="absolute right-0 -translate-y-1/2 text-[0.72rem] tabular-nums text-tinta-3" style={{ top: `${i * 50}%` }}>
+            <span key={v} className="absolute right-0 -translate-y-1/2 text-[0.75rem] tabular-nums text-tinta-3" style={{ top: `${i * 50}%` }}>
               {rupiahRingkas(v)}
             </span>
           ))}
@@ -79,7 +79,7 @@ function GrafikTujuhHari({ hari }) {
         <span />
         <ul className="grid grid-cols-7" aria-hidden="true">
           {hari.map((h, i) => (
-            <li key={h.kunci} className={`text-center text-[0.72rem] leading-tight ${i === hari.length - 1 ? 'font-semibold text-tinta' : 'text-tinta-3'}`}>
+            <li key={h.kunci} className={`text-center text-[0.75rem] leading-tight ${i === hari.length - 1 ? 'font-semibold text-tinta' : 'text-tinta-3'}`}>
               {i === hari.length - 1 ? 'Hari ini' : hariPendek(h.awal + 3600000)}
               <span className="block tabular-nums">{tanggalPendek(h.awal + 3600000)}</span>
             </li>
@@ -251,7 +251,7 @@ export default function Admin() {
           {tampil.map((p) => (
             <li key={p.kode} className="grid gap-3 rounded-[6px] border border-garis bg-putih p-4 md:grid-cols-[11rem_1fr_8rem_13rem] md:items-center">
               <div>
-                <Link href={`/pesanan/${p.kode}`} className="label whitespace-nowrap text-[0.8rem] text-nila underline underline-offset-2">
+                <Link href={`/pesanan/${p.kode}`} className="label inline-block py-1.5 whitespace-nowrap text-[0.8rem] text-nila underline underline-offset-2">
                   {p.kode}
                 </Link>
                 <p className="mt-0.5 text-[0.82rem] text-tinta-3">
@@ -297,7 +297,7 @@ export default function Admin() {
             <li key={t.kode} className="rounded-[6px] border border-garis bg-putih p-4">
               <p className="flex flex-wrap items-baseline justify-between gap-2">
                 <span className="label text-[0.8rem] text-nila">{t.kode}</span>
-                <Link href={`/pesanan/${t.pesanan.kode}`} className="text-[0.85rem] text-tinta-2 underline underline-offset-2">
+                <Link href={`/pesanan/${t.pesanan.kode}`} className="inline-block py-0.5 text-[0.85rem] text-tinta-2 underline underline-offset-2">
                   {t.pesanan.kode}
                 </Link>
               </p>
@@ -341,7 +341,7 @@ export default function Admin() {
               <span className="flex min-w-0 items-center gap-2.5">
                 <ContohKain kain={v.kain} className="h-7 w-7 shrink-0 rounded-[4px]" />
                 <span className="min-w-0">
-                  <a href={`#stok-${p.slug}`} className="block truncate font-medium leading-snug hover:underline">
+                  <a href={`#stok-${p.slug}`} className="block py-0.5 truncate font-medium leading-snug hover:underline">
                     {p.nama}
                   </a>
                   <span className="block text-[0.84rem] text-tinta-2">
@@ -349,7 +349,7 @@ export default function Admin() {
                   </span>
                 </span>
               </span>
-              <span className={`label shrink-0 text-[0.72rem] ${s === 0 ? 'text-secang' : 'text-kunyit-tua'}`}>{s === 0 ? 'Habis' : `Sisa ${s}`}</span>
+              <span className={`label shrink-0 text-[0.75rem] ${s === 0 ? 'text-secang' : 'text-kunyit-tua'}`}>{s === 0 ? 'Habis' : `Sisa ${s}`}</span>
             </li>
           ))}
           {menipis.length > 14 && <li className="text-[0.9rem] text-tinta-2">dan {menipis.length - 14} pilihan lain.</li>}

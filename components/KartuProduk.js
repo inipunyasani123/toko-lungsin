@@ -25,7 +25,7 @@ export default function KartuProduk({ produk: p, inventaris, judulTag: Judul = '
           <div className="relative aspect-[4/5] w-full overflow-hidden">
             <Image src={foto.src} alt={foto.alt} fill sizes="(min-width: 1024px) 24vw, (min-width: 640px) 33vw, 50vw" className="object-cover transition-transform duration-500 ease-out group-hover:scale-[1.04] motion-reduce:transform-none" />
             {!habisSemua && (
-              <span className="absolute bottom-2.5 right-2.5 flex items-center gap-1.5 rounded-full bg-putih/92 py-1 pl-1 pr-2.5 text-[0.7rem] font-semibold text-tinta-2">
+              <span className="absolute bottom-2.5 right-2.5 flex items-center gap-1.5 rounded-full bg-putih/92 py-1 pl-1 pr-2.5 text-[0.75rem] font-semibold text-tinta-2">
                 <ContohKain kain={kain} className="h-5 w-5 rounded-full" skala={0.9} />
                 {k.nama}
               </span>
@@ -37,9 +37,9 @@ export default function KartuProduk({ produk: p, inventaris, judulTag: Judul = '
             <GambarProduk p={p} kain={kain} jenis="kartu" judul="" className="relative block aspect-[4/5] w-full transition-transform duration-500 ease-out group-hover:-translate-y-1 motion-reduce:transform-none" />
           </>
         )}
-        <span className="label absolute left-2.5 top-2.5 rounded-[4px] bg-putih/90 px-2 py-1 text-[0.66rem] text-tinta-2">{kat?.nama}</span>
-        {p.baru && <span className="label absolute right-2.5 top-2.5 rounded-[4px] bg-kunyit px-2 py-1 text-[0.66rem] text-tinta">Baru</span>}
-        {habisSemua && <span className="label absolute inset-x-2.5 bottom-2.5 rounded-[4px] bg-tinta/85 px-2 py-1.5 text-center text-[0.68rem] text-white">Stok habis</span>}
+        <span className="label absolute left-2.5 top-2.5 rounded-[4px] bg-putih/90 px-2 py-1 text-[0.75rem] text-tinta-2">{kat?.nama}</span>
+        {p.baru && <span className="label absolute right-2.5 top-2.5 rounded-[4px] bg-kunyit px-2 py-1 text-[0.75rem] text-tinta">Baru</span>}
+        {habisSemua && <span className="label absolute inset-x-2.5 bottom-2.5 rounded-[4px] bg-tinta/85 px-2 py-1.5 text-center text-[0.75rem] text-white">Stok habis</span>}
       </div>
       <div className="mt-3 flex flex-1 flex-col">
         <Judul className="font-sans text-[1.02rem] font-semibold leading-snug tracking-normal">

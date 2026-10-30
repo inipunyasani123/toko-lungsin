@@ -158,7 +158,7 @@ export default function Beranda() {
                     <KainDekat kain={k.id} className="absolute inset-0 h-full w-full transition-transform duration-700 group-hover:scale-[1.06] motion-reduce:transform-none" />
                   </span>
                   <span className="flex flex-1 flex-col p-3.5 sm:p-4">
-                    <span className="label text-[0.7rem] text-tinta-3">{k.keluarga}</span>
+                    <span className="label text-[0.75rem] text-tinta-3">{k.keluarga}</span>
                     <span className="mt-1 block font-semibold leading-snug group-hover:underline group-hover:underline-offset-4">{k.nama}</span>
                     <span className="mt-1 block text-[0.86rem] leading-snug text-tinta-2">{k.ringkas}</span>
                     <span className="mt-auto block pt-2 text-[0.82rem] text-tinta-3">{produkDenganKain(k.id).length} model</span>

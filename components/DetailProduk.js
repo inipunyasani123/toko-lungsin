@@ -39,7 +39,7 @@ export function TabelUkuran({ p, pilih, saran }) {
             <tr key={u.id} className={`border-t border-garis ${u.id === pilih ? 'bg-nila-muda/60' : ''}`}>
               <th scope="row" className="whitespace-nowrap px-3 py-2.5 font-semibold">
                 {u.id}
-                {u.id === saran && <span className="label ms-2 rounded-[3px] bg-kunyit px-1.5 py-0.5 text-[0.62rem] text-tinta">Saran</span>}
+                {u.id === saran && <span className="label ms-2 rounded-[3px] bg-kunyit px-1.5 py-0.5 text-[0.75rem] text-tinta">Saran</span>}
               </th>
               {kolom.map((k) => (
                 <td key={k} className="whitespace-nowrap px-3 py-2.5 text-end tabular-nums">
@@ -186,7 +186,7 @@ export default function DetailProduk({ slug }) {
               <div key={`${tampil.jenis}-${k}`} className="absolute inset-0 animate-[muncul_0.4s_ease-out] motion-reduce:animate-none">
                 {gambarBesar(tampil)}
               </div>
-              <p className="label absolute left-3 top-3 rounded-[4px] bg-putih/90 px-2 py-1 text-[0.66rem] text-tinta-2">{tampil.label}</p>
+              <p className="label absolute left-3 top-3 rounded-[4px] bg-putih/90 px-2 py-1 text-[0.75rem] text-tinta-2">{tampil.label}</p>
             </div>
             <ul className="mt-3 flex gap-2 overflow-x-auto pb-1" aria-label="Gambar produk">
               {galeri.map((it, i) => (
@@ -250,7 +250,7 @@ export default function DetailProduk({ slug }) {
                       <ContohKain kain={id} className="h-full w-full" skala={1.3} />
                     </span>
                     <span className="mt-1.5 text-[0.76rem] leading-tight">{x.nama}</span>
-                    {habis && <span className="label mt-0.5 text-[0.6rem] text-secang">Habis</span>}
+                    {habis && <span className="label mt-0.5 text-[0.75rem] text-secang">Habis</span>}
                   </label>
                 );
               })}
@@ -280,12 +280,12 @@ export default function DetailProduk({ slug }) {
                   >
                     <input type="radio" name={`ukuran-${p.slug}`} value={x.id} checked={u === x.id} disabled={habis} onChange={() => { setU(x.id); setQty(1); setPesan(null); }} className="sr-only" />
                     <span className={`font-semibold ${habis ? 'line-through' : ''}`}>{x.id}</span>
-                    <span className={`label text-[0.6rem] ${u === x.id ? 'text-[#dfe4ee]' : habis ? 'text-secang' : s <= 2 ? 'text-secang' : 'text-tinta-3'}`}>
+                    <span className={`label text-[0.75rem] ${u === x.id ? 'text-[#dfe4ee]' : habis ? 'text-secang' : s <= 2 ? 'text-secang' : 'text-tinta-3'}`}>
                       {habis ? 'Habis' : s <= 2 ? `Tinggal ${s}` : `Stok ${s}`}
                     </span>
-                    {x.meter && <span className="text-[0.72rem]">{rupiah(hargaVarian(p, k, x.id))}</span>}
+                    {x.meter && <span className="text-[0.75rem]">{rupiah(hargaVarian(p, k, x.id))}</span>}
                     {disarankan && (
-                      <span className="label absolute -top-2.5 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-[3px] bg-kunyit px-1.5 py-0.5 text-[0.58rem] text-tinta">
+                      <span className="label absolute -top-2.5 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-[3px] bg-kunyit px-1.5 py-0.5 text-[0.75rem] text-tinta">
                         Pas untukmu
                       </span>
                     )}

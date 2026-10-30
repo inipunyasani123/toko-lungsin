@@ -63,7 +63,7 @@ export default function Header() {
           <IkonTas className="h-6 w-6" />
           <span className="sr-only sm:not-sr-only">Keranjang</span>{' '}
           <span
-            className={`label inline-flex h-6 min-w-6 items-center justify-center rounded-full px-1.5 text-[0.72rem] ${
+            className={`label inline-flex h-6 min-w-6 items-center justify-center rounded-full px-1.5 text-[0.75rem] ${
               jumlah ? 'bg-nila text-white' : 'bg-kapas text-tinta-2'
             }`}
           >
